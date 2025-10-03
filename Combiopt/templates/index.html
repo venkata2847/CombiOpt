@@ -1,0 +1,69 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CombiOpt — Multi-Strategy Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>CombiOpt — Multi-Strategy Visualizer</h1>
+
+        <!-- Controls -->
+        <div class="controls">
+            <label for="problem">Problem:</label>
+            <select id="problem">
+                <option value="tsp">TSP</option>
+                <option value="knapsack">Knapsack</option>
+            </select>
+
+            <label for="method">Method:</label>
+            <select id="method">
+                <option value="greedy">Greedy</option>
+                <option value="two_opt">Two-Opt</option>
+                <option value="dp">DP</option>
+            </select>
+
+            <label for="dataset">Dataset:</label>
+            <select id="dataset">
+                <option value="sample1">sample1</option>
+                <option value="sample2">sample2</option>
+            </select>
+
+            <button id="runBtn">Run</button>
+            <button id="downloadBtn" disabled>Download Result</button>
+        </div>
+
+        <!-- Summary -->
+        <section>
+            <h2>Summary</h2>
+            <div id="summary">Run an algorithm to see summary here.</div>
+        </section>
+
+        <!-- Solution / Visualization -->
+        <section>
+            <h2>Solution Visualization</h2>
+            <div id="viz">Run an algorithm to see solution here.</div>
+        </section>
+
+        <!-- Extra outputs (TSP pie chart, etc.) -->
+        <section>
+            <h2>Additional Outputs</h2>
+            <div id="extraOutputs"></div>
+        </section>
+
+        <!-- Charts -->
+        <section>
+            <h2>Charts</h2>
+            <canvas id="runtimeChart" width="400" height="200"></canvas>
+            <canvas id="qualityChart" width="400" height="200"></canvas>
+        </section>
+    </div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

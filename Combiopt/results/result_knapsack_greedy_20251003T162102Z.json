@@ -1,0 +1,16 @@
+{
+  "problem": "knapsack",
+  "method": "greedy",
+  "dataset": "sample1",
+  "runtime_sec": 2.4e-05,
+  "solution": {
+    "selected": [
+      "A",
+      "B"
+    ],
+    "value": 160,
+    "weight": 30,
+    "quality": null
+  },
+  "quality": null
+}

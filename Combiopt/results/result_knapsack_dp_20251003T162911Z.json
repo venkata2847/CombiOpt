@@ -1,0 +1,16 @@
+{
+  "problem": "knapsack",
+  "method": "dp",
+  "dataset": "sample1",
+  "runtime_sec": 7.7e-05,
+  "solution": {
+    "selected": [
+      "B",
+      "C"
+    ],
+    "value": 220,
+    "weight": 50,
+    "quality": 1.0
+  },
+  "quality": 1.0
+}

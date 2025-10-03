@@ -1,0 +1,19 @@
+{
+  "problem": "tsp",
+  "method": "greedy",
+  "dataset": "sample1",
+  "runtime_sec": 0.000371,
+  "solution": {
+    "route": [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    "length": 213.54667289476916,
+    "quality": 0.8494
+  },
+  "quality": 0.8494
+}

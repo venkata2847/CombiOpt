@@ -1,0 +1,27 @@
+/* static/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #6ee7b7;
+  --muted: #9aa4b2;
+}
+body {
+  margin:0; font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(180deg, #071023, #0b1220);
+  color: #e6eef6;
+  padding: 24px;
+}
+.app { max-width: 1100px; margin: auto; }
+header h1 { font-weight: 700; margin-bottom: 16px; color: var(--accent); }
+
+.card { background: rgba(255,255,255,0.03); padding: 16px; border-radius: 12px; box-shadow: 0 6px 18px rgba(2,6,23,0.6); margin-bottom: 16px; }
+
+.controls label { display:inline-block; margin-right: 12px; color: var(--muted); }
+.controls select, .controls button { padding: 8px 12px; border-radius: 8px; border: none; }
+#runBtn { background: linear-gradient(90deg,#2dd4bf,#06b6d4); color:#001219; font-weight:600; }
+#downloadBtn { background: transparent; color: var(--accent); border: 1px solid rgba(255,255,255,0.06); }
+
+.output { display:block; }
+#viz { margin-top: 12px; }
+canvas { margin-top: 12px; background: rgba(255,255,255,0.02); border-radius: 10px; padding:8px; }
